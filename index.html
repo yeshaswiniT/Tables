@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-table,th,td{
-border: 2px solid black;
-border-collapse: collapse;
-text-align: center;
-vertical-align: middle; 
-padding: 10px;
-}
+ table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            vertical-align: middle; 
+            padding: 10px;
+        }
 
-th, td {
-    border: 1px  solid black ; 
-    padding: 5px;
-}
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        table.product-details {
+            background-color: bisque;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        table.product-details caption {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
 
 
     th:nth-child(2), td:nth-child(2) {
@@ -31,65 +40,74 @@ th, td {
         width: 20%;
     }
     
-   
+    th ,tr:nth-child(odd) {
+            background-color: light grey; 
+        }
 
+    th ,tr:nth-child(even) {
+            background-color: lightpink; 
 
+        }
+
+    
     </style>
 </head>
 <body>
-    <table>
+   
 
-    <th colspan="5">Employer  Information</th>
+<table class = "Product Details">
 
+    <caption>Product Details</caption>
+    
+    <th rowspan="2">Product</th>
+    <th colspan="4">Features</th>
+    <th colspan="2">Pricing</th>
+    
 <tr>
-        <th></th>
-        <th>Name</th>
-        <th>Age</th>
-        <th>Gender </th>
-        <th>Ocupation</th>
+    
+        <th>Screen Size</th>
+        <th>Battery Life</th>
+        <th>Weight </th>
+        <th>Base Price</th>
+        <th>Discount Price</th>
         </tr>
-        <tr> 
-           
-            <td>1</td>
-            <td rowspan="2">Mike & Calley </td>
-            <td>60</td>
-            <td>Male</td>
-            <td>Dinning Service Manager</td>
-          </tr>
-        <tr>
-            <td>2</td>
-          
-          <td>27</td>
-          <td>female</td>
-          <td>Hiring manager</td>
-    </tr>
+     <tr>
+
+        <td>Product A</td>
+        <td>6 inches</td>
+        <td>24 hours</td>
+        <td>130g</td>
+        <td>$500</td>
+        <td>$450</td>
+        </tr>
 
     <tr>
-        <td>3</td>
-        <td>Jason</td>
-           <td>40</td>
-           <td>Male</td>
-           <td>Assitant manager</td>
-         </tr>
+        <td>Product B</td>
+        <td>5.5 inches</td>
+        <td>18 hours</td>
+        <td>140g</td>
+        <td>$450</td>
+        <td>$400</td>
+    </tr>
 
 
-         <tr>
-            <td>4</td>
-            <td>tina</td>
-               <td>18</td>
-               <td>female</td>
-               <td>worker</td>
-             </tr>
+    <tr>
 
+        <td>Product C</td>
+        <td>6.2 inches</td>
+        <td>20 hours</td>
+        <td>160g</td>
+        <td>$550</td>
+        <td>$500</td>
 
-</table>
+    </tr>
 
-</div>
-</div>
-    
-<table>
-
-
+    <td>Product D</td>
+    <td>7 inches</td>
+    <td>32 hours</td>
+    <td>190g</td>
+    <td>$770</td>
+    <td>$600</td>
 
 
 </table>
