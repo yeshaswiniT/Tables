@@ -4,115 +4,321 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
- table, th, td {
-            border: 2px solid black;
-            border-collapse: collapse;
-            text-align: center;
-            vertical-align: middle; 
-            padding: 10px;
-        }
+    <link rel="stylesheet" href= "index.css">
 
-        th, td {
-            border: 1px solid black;
-            padding: 5px;
-        }
-
-        table.product-details {
-            background-color: bisque;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-        table.product-details caption {
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-
-
-    th:nth-child(2), td:nth-child(2) {
-        width: 60%;
-    }
-
-    th:nth-child(3), td:nth-child(3) {
-        width: 10%;
-    }
-
-    th:nth-child(4), td:nth-child(4) {
-        width: 20%;
-    }
-    
-    th ,tr:nth-child(odd) {
-            background-color: light grey; 
-        }
-
-    th ,tr:nth-child(even) {
-            background-color: lightpink; 
-
-        }
-
-    
-    </style>
 </head>
+
+
 <body>
+    <div class="table-container">
+    <table >
+        <caption>Employee details</caption>
+          <p>1)The main table</p>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Occupation</th>
+            </tr>
+        
+
+            <tr> 
+                <td>1</td>
+                <td>Mike</td>
+                <td>60</td>
+                <td>Male</td>
+                <td>Dinning Service Manager</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Calley</td>
+                <td>27</td>
+                <td>Female</td>
+                <td>Hiring Manager</td>
+            </tr>
+        </table>
+        </div>
+
+       
+        <div class="table-container">
+       <table>
+        <p>2)Adding a row span to mulitiple columns "Employee Information"</p>
+
+        <tr>
+            <th colspan="5">Employer Information</th>
+        </tr>
+
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Occupation</th>
+        </tr>
+
+       
+        <tr> 
+            <td>1</td>
+            <td>Mike</td>
+            <td>60</td>
+            <td>Male</td>
+            <td>Dinning Service Manager</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Calley</td>
+            <td>27</td>
+            <td>Female</td>
+            <td>Hiring Manager</td>
+        </tr>
+    <tr>
+        <td>3</td>
+        <td>Jason</td>
+        <td>40</td>
+        <td>Male</td>
+        <td>Assistant Manager</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Tina</td>
+        <td>18</td>
+        <td>Female</td>
+        <td>Worker</td>
+    </tr>
+
+        </table>
+        </div>
+  
+        <div class="table-container">
+      <table table-container ="applying";>
+
+    <p>3)Added the  css Style for each column for Name-60%, Age- 10%, Gender-20% </p>
+
+    <tr>
+        <th colspan="5">Employer Information</th>
+    </tr>
+
+    <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Occupation</th>
+    </tr>
+
    
-
-<table class = "Product Details">
-
-    <caption>Product Details</caption>
-    
-    <th rowspan="2">Product</th>
-    <th colspan="4">Features</th>
-    <th colspan="2">Pricing</th>
-    
+    <tr> 
+        <td>1</td>
+        <td>Mike</td>
+        <td>60</td>
+        <td>Male</td>
+        <td>Dinning Service Manager</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Calley</td>
+        <td>27</td>
+        <td>Female</td>
+        <td>Hiring Manager</td>
+    </tr>
 <tr>
-    
-        <th>Screen Size</th>
-        <th>Battery Life</th>
-        <th>Weight </th>
-        <th>Base Price</th>
-        <th>Discount Price</th>
-        </tr>
-     <tr>
+    <td>3</td>
+    <td>Jason</td>
+    <td>40</td>
+    <td>Male</td>
+    <td>Assistant Manager</td>
+</tr>
+<tr>
+    <td>4</td>
+    <td>Tina</td>
+    <td>18</td>
+    <td>Female</td>
+    <td>Worker</td>
+</tr>
+        </table>
+        </div>
 
-        <td>Product A</td>
-        <td>6 inches</td>
-        <td>24 hours</td>
-        <td>130g</td>
-        <td>$500</td>
-        <td>$450</td>
-        </tr>
 
-    <tr>
-        <td>Product B</td>
-        <td>5.5 inches</td>
-        <td>18 hours</td>
-        <td>140g</td>
-        <td>$450</td>
-        <td>$400</td>
-    </tr>
+        <div class="table-container">
+<table class ="singlecolumn";>
 
+    <p>4)Merged two rows into a single data cell</p>
 
     <tr>
-
-        <td>Product C</td>
-        <td>6.2 inches</td>
-        <td>20 hours</td>
-        <td>160g</td>
-        <td>$550</td>
-        <td>$500</td>
-
+        <th colspan="5">Employer Information</th>
     </tr>
 
-    <td>Product D</td>
-    <td>7 inches</td>
-    <td>32 hours</td>
-    <td>190g</td>
-    <td>$770</td>
-    <td>$600</td>
+    <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Occupation</th>
+    </tr>
 
+   
+    <tr> 
+        <td>1</td>
+        <td rowspan="2">Mike & Calley</td>
+        <td>60</td>
+        <td>Male</td>
+        <td>Dinning Service Manager</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>27</td>
+        <td>Female</td>
+        <td>Hiring Manager</td>
+    </tr>
+<tr>
+    <td>3</td>
+    <td>Jason</td>
+    <td>40</td>
+    <td>Male</td>
+    <td>Assistant Manager</td>
+</tr>
 
 </table>
+</div>
 
-</body>
-</html>
+<div class="table-container">
+    <table >
+          <p>5) What is the purpose of align property in table cells?
+            i have aligned the table in center using align property<p>
+            <tr>
+                <th></th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Occupation</th>
+            </tr>
+        
+
+            <tr> 
+                <td>1</td>
+                <td>Mike</td>
+                <td>60</td>
+                <td>Male</td>
+                <td>Dinning Service Manager</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Calley</td>
+                <td>27</td>
+                <td>Female</td>
+                <td>Hiring Manager</td>
+            </tr>
+        </table>
+        </div>
 
 
+
+        <div class="table-container"><style="padding: 4px";></style>
+ <table>
+                  <p>6) I have used padding for space around the cells<p>
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Occupation</th>
+                    </tr>
+                
+        
+                    <tr> 
+                        <td>1</td>
+                        <td>Mike</td>
+                        <td>60</td>
+                        <td>Male</td>
+                        <td>Dinning Service Manager</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Calley</td>
+                        <td>27</td>
+                        <td>Female</td>
+                        <td>Hiring Manager</td>
+                    </tr>
+                </table>
+                </div>
+
+
+
+
+
+
+
+        <table class = "ProductDetails";>
+
+            <caption>Product Details</caption>
+
+            <tr>        
+            
+            <th rowspan="2">Product</th>
+            <th colspan="3">Features</th>
+            <th colspan="2">Pricing</th>
+            
+            </tr>
+            <tr>
+            
+                <th>Screen Size</th>
+                <th>Battery Life</th>
+                <th>Weight </th>
+                <th>Base Price</th>
+                <th>Discount Price</th>
+                </tr>
+             <tr>
+        
+                <td>Product A</td>
+                <td>6 inches</td>
+                <td>24 hours</td>
+                <td>130g</td>
+                <td>$500</td>
+                <td>$450</td>
+                </tr>
+        
+            <tr>
+                <td>Product B</td>
+                <td>5.5 inches</td>
+                <td>18 hours</td>
+                <td>140g</td>
+                <td>$450</td>
+                <td>$400</td>
+            </tr>
+        
+        
+            <tr>
+        
+                <td>Product C</td>
+                <td>6.2 inches</td>
+                <td>20 hours</td>
+                <td>160g</td>
+                <td>$550</td>
+                <td>$500</td>
+        
+            </tr>
+
+        <tr>
+            <td>Product D</td>
+            <td>7 inches</td>
+            <td>32 hours</td>
+            <td>190g</td>
+            <td>$770</td>
+            <td>$600</td>
+        </tr>
+        
+        </table>
+
+
+
+
+
+
+      
+   
+
+    
+      </body>
+      </html>
+   

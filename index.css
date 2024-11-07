@@ -1,0 +1,47 @@
+
+    table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            margin: 0 auto;
+            border: 1px solid black;
+            text-align: center;
+        
+       
+ }
+
+ .table-container p {
+    text-align: center;
+    margin-bottom: 10px; 
+    padding: 5px;
+    color: blueviolet;
+}
+
+
+ .applying{
+    th:nth-child(2), td:nth-child(2) {
+        width: 40%;
+    }
+   
+    th:nth-child(3), td:nth-child(3) {
+        width: 20%;
+    }
+
+     th:nth-child(4), td:nth-child(4) {
+        width: 10%;
+
+    
+    }
+}
+
+
+.ProductDetails{ 
+    
+    th ,tr:nth-child(odd) {
+           background-color: light grey; 
+}
+
+th ,tr:nth-child(even) {
+    background-color: lightpink; 
+
+}
+}
