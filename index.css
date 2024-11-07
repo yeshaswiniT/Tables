@@ -5,8 +5,7 @@
             margin: 0 auto;
             border: 1px solid black;
             text-align: center;
-        
-       
+          
  }
 
  .table-container p {
@@ -36,11 +35,11 @@
 
 .ProductDetails{ 
     
-    th ,tr:nth-child(odd) {
+    tr:nth-child(even) {
            background-color: light grey; 
 }
 
-th ,tr:nth-child(even) {
+ tr:nth-child(odd) {
     background-color: lightpink; 
 
 }
